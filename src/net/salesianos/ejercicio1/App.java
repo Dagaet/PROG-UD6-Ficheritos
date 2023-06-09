@@ -10,7 +10,8 @@ public class App {
 
         System.out.println("Introduzca al menos treinta caracteres");
         String texto = console.readLine("Escriba un nombre \n");
-        texto = texto.replace(" ", "");
+        texto = texto.replace(" ", "_");
+        texto = texto.toUpperCase();
 
         if (texto.length() <= 30) {
             System.out.println("El texto no cumple con los parametros");
