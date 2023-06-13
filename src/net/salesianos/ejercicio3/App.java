@@ -33,6 +33,9 @@ public class App {
         String fOutput2 = "Contenido del fichero Dos: " + output2 + "\n";
         fw.write(fOutput2);
 
+        String firma = "Esto está firmado supongo\n";
+        fw.write(firma);
+
         fw.close();
         fr1.close();
         fr2.close();
